@@ -1,17 +1,44 @@
-@media (max-width: 600px){
-    .menu-hamburguesa{
+
+
+@media (max-width: 600px) {
+    .menu-hamburguesa {
         display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding: 10px;
+        z-index: 2000;
     }
 
-    .sidevar{
-        position: sticky;
-        display: none;        
+    .menu-hamburguesa img {
+        width: 30px;
+        height: 30px;
     }
-    .contenido{
+
+    /* Sidebar ocultada*/
+    .sidevar {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #00334e;
+        width: 230px;
+        height: 100vh;
+        flex-direction: column;
+        z-index: 1000;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .sidevar.mostrar {
+        display: flex;
+        transform: translateX(0);
+    }
+
+    /* Contenido centrado y ajustado */
+    .contenido {
         margin-left: 10px;
     }
 
-    nav{
+    nav {
         justify-content: space-between;
         margin-left: 5px;
     }
