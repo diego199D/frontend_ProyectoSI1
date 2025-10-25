@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/png" href="iconos/iconoP.png">
+    <link rel="stylesheet" href="css/estiloGestionDocente.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estiloSidevarResponsivo.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Docente</title>
+</head>
+<body>
+    <nav>
+        <div class="menu-hamburguesa">
+            <img src="iconos/hamburguesa.png" alt="">
+        </div>
+        <div class="perfil-usuario">
+            <img src="iconos/usuario.png" alt="">
+            <div class="usuario">
+                <h2>Lisa Simpson</h2>
+                <p>Administrador</p>
+            </div>
+        </div>
+    </nav>
+    <div class="contenedor">
+        <!-- sidevar -->
+         <div class="sidevar">
+            <div class="logo">
+                <img src="iconos/logoGrandeBlanco.png" alt="">
+            </div>
+            <ul>
+                <li><img src="iconos/dashboard.png" alt=""><a href="dashboard.html">DASHBOARD</a></li>
+                <li id="aqui"><img src="iconos/docente.png" alt=""><a href="gestionDocentes.html">GESTION DE DOCENTES</a></li>
+                <li><img src="iconos/materia.png" alt=""><a href="materiaGrupo.html">MATERIAS Y GRUPOS</a></li>
+                <li><img src="iconos/aula.png" alt=""><a href="horarioAula.html">HORARIOS Y AULAS</a></li>
+                <li><img src="iconos/bitacora.png" alt=""><a href="bitacora.html">BITACORAS</a></li>
+                <li><img src="iconos/reporte.png" alt=""><a href="reporte.html">REPORTES</a></li>
+    </div>
+    
+    <div class="contenido">
+        <!-- registro Docente -->
+        <div class="formulario-registro">
+            <h1>Registrar Docente</h1>
+            <form action="procesar_registro_docente.php" method="post">
+                <label for="">Nombre:</label>
+                <input type="text" name="docenteNombre" placeholder="nombre completo" required>
+                <label for="">Telefono:</label>
+                <input type="number" name="docenteTelefono" placeholder="telefono" required>
+                <label for="">Correo</label>
+                <input type="email" name="docenteCorreo" placeholder="example@gmail.com" required>
+                <label for="">Fecha de nacimiento</label>
+                <input type="date" name="docenteFechaNacimiento" placeholder="  /  /  " required>
+                <label for="">Contrasena</label>
+                <input type="password" name="docenteContrasena" placeholder="" required>                        
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+        <!-- tabla -->
+         <!-- tabla de docentes -->
+        <div class="tabla-container">
+        <h2>Lista de Docentes</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Registro</th>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Teléfono</th>
+                    <th>Cant materias</th>
+                    <th>Accion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Juan Pérez</td>
+                    <td>juanperez@gmail.com</td>
+                    <td>75012345</td>
+                    <td>3</td>
+                    <td>
+                    <button class="editar">Editar</button>
+                    <button class="eliminar">Eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>   
+        
+        
+    </div>
+</body>
+</html>

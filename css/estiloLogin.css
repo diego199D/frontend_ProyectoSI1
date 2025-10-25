@@ -1,0 +1,86 @@
+body{
+    display: flex;
+    font-family: poppins;
+    background-color: #0d334f;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.caja-login{
+    display: flex;
+    flex-direction: column;
+    background-color: #d8d8d8;
+    align-items: center;
+    justify-content: center;;
+    padding: 100px;
+    border-radius: 30px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.caja-login img{
+    width: 200px;
+}
+
+.caja-login form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja-login form input{
+    margin: 10px;
+    padding: 12px;
+    border-radius: 15px;
+    border: none;
+    width: 100%;
+}
+
+.caja-login form a{
+    color: #0d334f;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 1px;
+}.caja-login form button{
+    margin-top: 20px;
+    padding: 10px 15px;
+    border-radius: 12px;
+    border: none;
+    background-color: #0060ab;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.caja-login form button:hover{
+    background-color: #004880;
+    
+}
+@media (max-width: 600px){
+    .caja-login{
+        width: 90%;
+        height: auto;
+        padding: 50px;
+    }
+
+    .caja-login img{
+        width: 150px;
+    }
+    .caja-login h1{
+        text-align: center;
+    }
+}
+
+/* ingreso */
+.ingresarBtn a{
+    background-color:#0060ab;
+    color: white;
+    border-radius: 18px;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+.ingresarBtn a:hover{
+    background-color: #004880;
+}

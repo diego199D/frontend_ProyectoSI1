@@ -1,0 +1,18 @@
+@media (max-width: 600px){
+    .menu-hamburguesa{
+        display: flex;
+    }
+
+    .sidevar{
+        position: sticky;
+        display: none;        
+    }
+    .contenido{
+        margin-left: 10px;
+    }
+
+    nav{
+        justify-content: space-between;
+        margin-left: 5px;
+    }
+}
